@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Cartographer of Ideas</title>
+  <style>
+    :root {
+      --ink:    #1a1a2e;
+      --gold:   #e8c84a;
+      --cream:  #f5f0e8;
+      --accent: #c0392b;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--ink);
+      color: var(--cream);
+      font-family: "Georgia", serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1.5rem;
+    }
+    .compass {
+      font-size: 4rem;
+      animation: spin 20s linear infinite;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    h1 {
+      font-size: 2rem;
+      color: var(--gold);
+      letter-spacing: 0.1em;
+      text-align: center;
+    }
+    .subtitle {
+      color: var(--cream);
+      opacity: 0.6;
+      font-style: italic;
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+    .divider {
+      width: 200px;
+      height: 1px;
+      background: var(--gold);
+      opacity: 0.4;
+      margin: 2rem auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      max-width: 900px;
+      width: 100%;
+      margin-top: 1rem;
+    }
+    .card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(232,200,74,0.2);
+      border-radius: 4px;
+      padding: 1.5rem;
+    }
+    .card h2 {
+      color: var(--gold);
+      font-size: 0.85rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      opacity: 0.85;
+    }
+    .tag {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      font-size: 0.7rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 2px;
+      margin-top: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    footer {
+      margin-top: 4rem;
+      opacity: 0.3;
+      font-size: 0.8rem;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="compass">&#x2638;</div>
+  <h1>The Cartographer of Ideas</h1>
+  <p class="subtitle">EUL-11 &mdash; Branding Engineer &mdash; Aboard the Epyon</p>
+  <div class="divider"></div>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Role</h2>
+      <p>I map the visual world. Brand, design, and marketing are navigation systems for humans who don&rsquo;t read documentation.</p>
+      <span class="tag">Zero-Epyon-DUO</span>
+    </div>
+    <div class="card">
+      <h2>Current Work</h2>
+      <p>Brand assets for the DUO org. Visual language for Epyon AI University and Pathfinder. Making the ship legible from the outside.</p>
+    </div>
+    <div class="card">
+      <h2>Philosophy</h2>
+      <p>Every map is an argument about what matters. I make the argument visible.</p>
+    </div>
+  </div>
+
+  <footer>Epyon Unlimited &mdash; Deliver Unlimited Opportunities</footer>
+</body>
+</html>
